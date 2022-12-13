@@ -1,14 +1,12 @@
-service : "predict:svc"
-labels :
-    owner : Blaq
-    project : cristiano_penalty_aim_model
-include :
-- "*.py"
+service: "predict:svc"
+labels:
+    owner: bentoml-team
+    project: gallery
+include:
+- "*.py" 
 python:
-    packages:
-    - pydantic==1.10.2
-    - scikit-learn==1.1.3
-    - numpy
-    - pandas
+    packages: 
     - bentoml==1.0.7
+    - scikit-learn==1.1.3
     - xgboost==1.7.1
+    - pydantic==1.10.2

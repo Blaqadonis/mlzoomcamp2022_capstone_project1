@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[10]:
+# In[1]:
 
 
 #!pip install -U scikit-learn
@@ -59,9 +59,9 @@ Dtrain = xgb.DMatrix(X_train, label=y_train_data)
 Dtest = xgb.DMatrix(X_test, label=y_test)
 
 xgb_params = {
-    'eta': 0.5,
+    'eta': 0.9,
     'max_depth': 6,
-    'min_child_weight': 10,
+    'min_child_weight': 5,
 'num_class':3,
     'objective':'multi:softmax',
     'nthread': 8,
@@ -71,7 +71,7 @@ xgb_params = {
 from sklearn.metrics import accuracy_score
 model = xgb.train(xgb_params, Dtrain, num_boost_round=10)
 y_pred = model.predict(Dtest)
-score = np.sqrt(accuracy_score(y_test, y_pred))
+score = accuracy_score(y_test, y_pred)
 print("Accuracy: %f" % (score))
 
 #!pip install bentoml==1.0.7
