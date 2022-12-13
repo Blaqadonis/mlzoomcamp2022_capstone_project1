@@ -1,13 +1,11 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[6]:
+# In[10]:
 
 
-#!pip install xgboost
 #!pip install -U scikit-learn
-#!pip install seaborn
-#!pip install matplotlib
+
 import numpy as np
 import pandas as pd
 
@@ -23,9 +21,9 @@ data1.columns = [x.lower().replace('.', '') for x in data1.columns]
 
 data1['minute_taken'] = data1['minute_taken'].fillna(0).astype(int)  #to turn the column to integer
 
-data1['target'] = data1['aim'].replace(['left'], 1)
-data1['target'] = data1['target'].replace(['right'], 3)
-data1['target'] = data1['target'].replace(['middle'], 2)
+data1['target'] = data1['aim'].replace(['left'], 0)
+data1['target'] = data1['target'].replace(['right'], 2)
+data1['target'] = data1['target'].replace(['middle'], 1)
 y = data1['target']
 data1 = data1.drop('target',axis=1)
 data1 = data1.drop('aim',axis=1)
@@ -47,38 +45,36 @@ val = val.reset_index()
 
 from sklearn.feature_extraction import DictVectorizer
 
-dict_train = train.to_dict(orient='records')
-dict_val = val.to_dict(orient='records')
+dict_train_data = train_data.to_dict(orient='records')
+dict_test_data = test_data.to_dict(orient='records')
 
 dv = DictVectorizer(sparse=False)
 
-x_train = dv.fit_transform(dict_train)
-x_val = dv.transform(dict_val)
+X_train = dv.fit_transform(dict_train_data)
+X_test = dv.transform(dict_test_data)
 
 import xgboost as xgb
 
-dtrain = xgb.DMatrix(x_train, label=y_train)
-dval = xgb.DMatrix(x_val, label=y_val)
+Dtrain = xgb.DMatrix(X_train, label=y_train_data)
+Dtest = xgb.DMatrix(X_test, label=y_test)
 
 xgb_params = {
     'eta': 0.5,
-    'max_depth': 9,
-    'min_child_weight': 1,
-
-    'objective': 'reg:squarederror',
+    'max_depth': 6,
+    'min_child_weight': 10,
+'num_class':3,
+    'objective':'multi:softmax',
     'nthread': 8,
     'seed': 1
 }
-model = xgb.train(xgb_params, dtrain,
-                  num_boost_round=501, verbose_eval=10)
 
-y_pred= model.predict(dval)
+from sklearn.metrics import accuracy_score
+model = xgb.train(xgb_params, Dtrain, num_boost_round=10)
+y_pred = model.predict(Dtest)
+score = np.sqrt(accuracy_score(y_test, y_pred))
+print("Accuracy: %f" % (score))
 
-from sklearn.metrics import mean_squared_error
-rmse = np.sqrt(mean_squared_error(y_val, y_pred))
-print("RMSE: %f" % (rmse))
-
-#pip install bentoml==1.0.7
+#!pip install bentoml==1.0.7
 import bentoml
 bentoml.xgboost.save_model("cristiano_penalty_aim_model",model, custom_objects={"DictVectorizer":dv},
 signatures={"predict": {"batchable":True,"batch_dim":0,}})
