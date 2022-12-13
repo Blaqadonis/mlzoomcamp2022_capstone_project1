@@ -1,0 +1,176 @@
+team,opposition,minute_taken,scoreline,venue,previous_penalty,natural_foot,position_style,competition,gk,aim
+Man U,West Brom,11,draw,Home,N/A,right,left,Carling,Hoult,left
+Portugal,Iran,80,lead,neutral,1,right,left,WC,Mirzapour,left
+Portugal,Denmark,58,losing,away,1,right,left,friendly,Sorensen,right
+Man U,Wigan,50,lead,home,0,right,left,EPL,Kirkland,left
+Man U,Watford,20,draw,home,0,right,left,EPL,Lee,left
+Man U,Spurs,45,draw,away,1,right,left,EPL,Robinson,left
+Man U,Middlesbrough,68,losing,away,1,right,left,FA Cup,Schwarzer,left
+Man U,Middlesbrough,76,draw,home,1,right,left,FA Cup,Schwarzer,right
+Man U,Man City,33,draw,away,1,right,left,EPL,Isaksson,left
+Man U,Dynamo Kyiv,68,lead,away,1,right,left,UCL,Shovkovskiy,left
+Man U,Derby County,90,lead,home,1,right,left,EPL,Bywater,left
+Man U,Everton,88,draw,home,1,right,left,EPL,Howard,right
+Man U,West Ham,66,lead,away,1,right,left,EPL,Green,left
+Man U,Spurs,69,draw,home,0,right,left,FA Cup,Cerny,left
+Man U,Arsenal,53,losing,home,1,right,left,EPL,Lehmann,left
+Man U,Barcelona,2,draw,away,1,right,left,UCL,Valdes,right
+Man U,Wigan,32,draw,away,0,right,left,EPL,Kirkland,right
+Man U,Bolton,60,draw,home,1,right,left,EPL,Jaaskelainen,right
+Man U,Derby County,89,lead,home,1,right,left,Carling,Carroll,left
+Man U,Everton,44,draw,home,1,right,left,EPL,Howard,left
+Portugal,Finland,78,draw,home,1,right,left,friendly,Jaaskelainen,right
+Man U,Liverpool,23,draw,home,1,right,left,EPL,Reina,left
+Man U,Spurs,57,losing,home,1,right,left,EPL,Gomes,middle
+Real Madrid,Depotivo La Coruna,35,draw,home,1,right,left,La Liga,Aranzubia,left
+Real Madrid,Almeria,82,lead,home,1,right,left,La Liga,Alves,left
+Real Madrid,Tenerife,79,lead,away,0,right,left,La Liga,Aragoneses,right
+Real Madrid,Racing Santander,55,lead,home,1,right,left,La Liga,Tono Rodriguez,left
+Real Madrid,Athletic Bilbao,21,draw,home,1,right,left,La Liga,Iraizoz,right
+Real Madrid,Espanyol,28,draw,home,1,right,left,La Liga,Kameni,left
+Real Madrid,Malaga,50,lead,away,1,right,left,La Liga,Galatto,left
+Real Madrid,Racing Santander,55,lead,home,1,right,left,La Liga,Tono Rodriguez,right
+Real Madrid,Athletic Bilbao,90,lead,home,1,right,left,La Liga,Iraizoz,left
+Real Madrid,Ajax,81,lead,away,1,right,left,UCL,Stekelenburg,middle
+Real Madrid,Getafe,11,draw,away,1,right,left,La Liga,Codina,left
+Real Madrid,Malaga,67,lead,home,1,right,left,La Liga,Caballero,left
+Real Madrid,Barcelona,82,losing,home,1,right,left,La Liga,Valdes,right
+Real Madrid,Getafe,90,lead,home,1,right,left,La Liga,Ustari,middle
+Portugal,Cyprus,35,draw,away,1,right,left,friendly,Poursaitidis,left
+Real Madrid,Getafe,59,draw,home,1,right,left,La Liga,Moya,right
+Real Madrid,Rayo Vallecano,51,lead,home,1,right,left,La Liga,Gimenez,left
+Real Madrid,Rayo Vallecano,84,lead,home,1,right,left,La Liga,Gimenez,middle
+Real Madrid,Lyon,69,lead,away,1,right,left,UCL,Lloris,middle
+Real Madrid,Osasuna,58,lead,home,1,right,left,La Liga,Andres Fernandez,right
+Real Madrid,Atletico Madrid,24,losing,home,1,right,left,La Liga,Courtois,left
+Real Madrid,Atletico Madrid,82,lead,home,1,right,left,La Liga,Asenjo,left
+Real Madrid,Sevilla,85,lead,away,1,right,left,La Liga,Varas,right
+Real Madrid,Athletic Bilbao,46,draw,home,1,right,left,La Liga,Iraizoz,left
+Real Madrid,Athletic Bilbao,67,lead,home,1,right,left,La Liga,Iraizoz,left
+Real Madrid,Levante,45,losing,home,1,right,left,La Liga,Munua,right
+Real Madrid,Atletico Madrid,83,lead,away,1,right,left,La Liga,Courtois,left
+Real Madrid,Bayern Munich,6,draw,home,1,right,left,UCL,Neuer,right
+Real Madrid,Athletic Bilbao,12,draw,away,1,right,left,La Liga,Iraizoz,middle
+Real Madrid,Granada,81,losing,away,0,right,left,La Liga,Julio Cesar,right
+Portugal,Turkey,64,losing,home,1,right,left,friendly,Demirel,right
+Real Madrid,Rayo Vallecano,70,lead,away,0,right,left,La Liga,Martinez,right
+Real Madrid,Depotivo La Coruna,23,losing,home,1,right,left,La Liga,Aranzubia,right
+Real Madrid,Depotivo La Coruna,84,lead,home,1,right,left,La Liga,Aranzubia,left
+Real Madrid,Celta Vigo,67,lead,home,1,right,left,La Liga,Alvarez,left
+Real Madrid,Getafe,33,draw,home,1,right,left,La Liga,Moya,left
+Real Madrid,Barcelona,57,lead,away,1,right,left,Copa Del Rey,Pinto,left
+Real Madrid,Celta Vigo,72,draw,away,1,right,left,La Liga,Varas,middle
+Real Madrid,Malaga,22,draw,home,1,right,left,La Liga,Caballero,middle
+Real Madrid,Getafe,34,draw,home,1,right,left,La Liga,Moya,left
+Real Madrid,Elche,90,draw,away,1,right,left,La Liga,Herrera,left
+Real Madrid,Malaga,90,lead,home,1,right,left,La Liga,Caballero,left
+Real Madrid,Juventus,29,draw,home,1,right,left,UCL,Buffon,left
+Real Madrid,Sevilla,31,lead,home,1,right,left,La Liga,Beto,right
+Real Madrid,Real Sociedad,26,lead,home,1,right,left,La Liga,Bravo,middle
+Real Madrid,Copenhagen,89,lead,away,1,right,left,UCL,Wiland,middle
+Real Madrid,Atletico Madrid,7,draw,away,0,right,left,La Liga,Aranzubia,left
+Real Madrid,Atletico Madrid,16,lead,away,1,right,left,La Liga,Aranzubia,left
+Real Madrid,Barcelona,55,draw,home,1,right,left,La Liga,Valdes,left
+Real Madrid,Atletico Madrid,90,lead,neutral,1,right,left,UCL,Courtois,right
+Real Madrid,Atletico Madrid,26,losing,home,1,right,left,La Liga,Moya,left
+Real Madrid,Elche,28,draw,home,1,right,left,La Liga,Herrera,right
+Real Madrid,Elche,80,lead,home,1,right,left,La Liga,Herrera,left
+Real Madrid,Ludogorets,10,losing,away,1,right,left,UCL,Stoyanov,left
+Real Madrid,Ludogorets,25,losing,away,0,right,left,UCL,Stoyanov,left
+Real Madrid,Levante,13,draw,away,1,right,left,La Liga,Marino,right
+Real Madrid,Barcelona,35,losing,home,1,right,left,La Liga,Bravo,right
+Real Madrid,Eibar,83,lead,away,1,right,left,La Liga,Iruretagoiena,left
+Real Madrid,Celta Vigo,36,draw,home,1,right,left,La Liga,Alvarez,right
+Real Madrid,Ludogorets,20,draw,home,1,right,left,UCL,Stoyanov,middle
+Real Madrid,Valencia,90,losing,home,1,right,left,La Liga,Diego Alves,left
+Real Madrid,Villareal,52,draw,home,1,right,left,La Liga,Asenjo,right
+Real Madrid,Malaga,67,lead,home,1,right,left,La Liga,Kameni,left
+Real Madrid,Valencia,45,losing,home,0,right,left,La Liga,Diego Alves,left
+Real Madrid,Juventus,23,draw,home,0,right,left,UCL,Buffon,middle
+Real Madrid,Getafe,34,draw,home,1,right,left,La Liga,Codina,middle
+Portugal,Armenia,29,losing,away,1,right,left,Qualifiers,Berezovskiy,right
+Real Madrid,Espanyol,17,lead,away,1,right,left,La Liga,Pau Lopez,right
+Real Madrid,Shakhtar Donetsk,55,draw,home,1,right,left,UCL,Pyatov,left
+Real Madrid,Shakhtar Donetsk,63,lead,home,1,right,left,UCL,Pyatov,left
+Real Madrid,Eibar,82,lead,away,1,right,left,La Liga,Riesgo,right
+Real Madrid,Rayo Vallecano,30,draw,home,1,right,left,La Liga,Yoel,left
+Real Madrid,Real Sociedad,24,draw,home,1,right,left,La Liga,Rulli,middle
+Real Madrid,Real Sociedad,42,draw,home,0,right,left,La Liga,Rulli,right
+Real Madrid,Espanyol,12,lead,home,1,right,left,La Liga,Arlauskis,left
+Real Madrid,Malaga,36,lead,away,1,right,left,La Liga,Kameni,right
+Real Madrid,Levante,34,draw,away,0,right,left,La Liga,Marino,left
+Real Madrid,Sevilla,58,lead,home,1,right,left,La Liga,Rico,middle
+Portugal,Bulgaria,67,losing,home,0,right,left,friendly,Stojanov,left
+Portugal,Austria,79,draw,neutral,0,right,left,Euro,Almer,left
+Real Madrid,Deportivo Alaves,17,losing,away,0,right,left,La Liga,Pacheco,right
+Real Madrid,Deportivo Alaves,79,lead,away,1,right,left,La Liga,Pacheco,right
+Portugal,Latvia,28,draw,home,0,right,left,Qualifiers,Vanins,left
+Portugal,Letonia,57,lead,home,1,right,left,Qualifiers,Vanins,left
+Real Madrid,Atletico Madrid,71,lead,away,0,right,left,La Liga,Oblak,left
+Real Madrid,Gijon,5,draw,home,1,right,left,La Liga,Marino,right
+Real Madrid,Kashima,60,losing,neutral,1,right,left,CWC,Sogahata,left
+Real Madrid,Sevilla,67,draw,away,1,right,left,La Liga,Rico,left
+Real Madrid,Villareal,74,losing,away,1,right,left,La Liga,Asenjo,left
+Real Madrid,Palmas,86,losing,home,1,right,left,La Liga,Varas,right
+Real Madrid,Valencia,57,lead,home,1,right,left,La Liga,Alves,right
+Portugal,New Zealand,33,draw,neutral,0,right,left,Confederations,Marinovic,right
+Portugal,Faroe Islands,29,lead,home,1,right,left,Qualifiers,Nielsen,right
+Real Madrid,Apoel,51,lead,home,1,right,left,UCL,Waterman,left
+Real Madrid,Spurs,43,losing,home,1,right,left,UCL,Lloris,right
+Real Madrid,Malaga,76,lead,home,1,right,left,La Liga,Roberto,left
+Real Madrid,Sevilla,31,lead,home,0,right,left,La Liga,Rico,right
+Real Madrid,Valencia,16,draw,away,1,right,left,La Liga,Neto,right
+Real Madrid,Valencia,38,lead,away,1,right,left,La Liga,Neto,left
+Real Madrid,PSG,45,losing,home,1,right,left,UCL,Areola,left
+Real Madrid,Juventus,97,losing,home,1,right,left,UCL,Szczsny,right
+Portugal,Spain,4,draw,neutral,1,right,left,WC,De gea,right
+Portugal,Iran,53,lead,neutral,1,right,left,WC,Beiranvand,right
+Juventus,Empoli,54,losing,away,0,right,left,Serie A,Provedel,left
+Juventus,Fiorentina,79,lead,away,1,right,left,Serie A,Lafont,left
+Juventus,Torino,70,draw,away,1,right,left,Serie A,Sirigu,right
+Juventus,Sampdoria,65,draw,home,1,right,left,Serie A,Perin,middle
+Juventus,Chievo,52,lead,home,1,right,left,Serie A,Sorrentino,right
+Juventus,Lazio,88,draw,away,0,right,left,Serie A,Strakosha,middle
+Juventus,Atletico Madrid,86,lead,home,1,right,left,UCL,Oblak,left
+Portugal,Lithuania,7,draw,away,1,right,left,Qualifiers,Setkus,right
+Juventus,Hellas,49,draw,home,1,right,left,Serie A,Silvestri,middle
+Portugal,Ukraine,72,losing,away,1,right,left,Qualifiers,Pyatov,right
+Juventus,Genoa,90,draw,home,1,right,left,Serie A,Radu,left
+Portugal,Lithuania,7,draw,home,1,right,left,Qualifiers,Setkus,middle
+Juventus,Sassuolo,68,losing,home,1,right,left,Serie A,Turati,left
+Juventus,Cagliari,67,losing,home,1,right,left,Serie A,Olsen,right
+Juventus,Rome,10,lead,away,1,right,left,Serie A,Pau Lopez,right
+Juventus,Fiorentina,40,draw,home,1,right,left,Serie A,Dragowski,left
+Juventus,Fiorentina,80,lead,home,1,right,left,Serie A,Dragowski,left
+Juventus,Milan,90,losing,away,1,right,left,Copa Italia,Donnarumma,middle
+Juventus,Milan,16,losing,away,1,right,left,Copa Italia,Donnarumma,left
+Juventus,Bologna,23,draw,away,0,right,left,Serie A,Skorupski,middle
+Juventus,Lecce,62,draw,home,1,right,left,Serie A,Gabriel,middle
+Juventus,Atalanta,55,losing,home,1,right,left,Serie A,Gollini,left
+Juventus,Atalanta,90,losing,home,1,right,left,Serie A,Gollini,left
+Juventus,Lazio,51,draw,home,1,right,left,Serie A,Strakosha,right
+Juventus,Sampdoria,88,lead,home,1,right,left,Serie A,Audero,middle
+Juventus,Lyon,43,losing,home,0,right,left,UCL,Lopes,right
+Juventus,Roma,44,losing,away,1,right,left,Serie A,Mirante,right
+Juventus,Spezia,76,lead,away,1,right,left,Serie A,Provedel,middle
+Juventus,Barcelona,13,draw,away,1,right,left,UCL,Ter Stegen,middle
+Juventus,Barcelona,52,lead,away,1,right,left,UCL,Ter Stegen,left
+Juventus,Genoa,78,draw,away,1,right,left,Serie A,Perin,middle
+Juventus,Genoa,89,lead,away,1,right,left,Serie A,Perin,middle
+Juventus,Atalanta,61,draw,home,1,right,left,Serie A,Gollini,right
+Juventus,Inter,26,losing,away,0,right,left,Copa Italia,Handanovic,middle
+Juventus,Cagliari,25,lead,home,1,right,left,Serie A,Cragno,right
+Juventus,Udinese,83,draw,away,1,right,left,Serie A,Scuffet,left
+Juventus,Inter,24,draw,home,1,right,left,Serie A,Handanovic,left
+Portugal,Hungary,87,lead,away,0,right,left,Euro,Gulacsi,right
+Portugal,France,31,draw,away,1,right,left,Euro,Lloris,left
+Portugal,France,60,losing,away,1,right,left,Euro,Lloris,left
+Portugal,Ireland,15,draw,home,1,right,left,Qualifiers,Bazunu,left
+Portugal,Luxemburg,7,draw,home,0,right,left,Qualifiers,Moris,middle
+Portugal,Luxemburg,12,lead,home,0,right,left,Qualifiers,Moris,right
+Man U,Arsenal,70,draw,home,1,right,left,EPL,Ramsdale,middle
+Man U,Norwich,75,draw,away,1,right,left,EPL,Krul,left
+Man U,Middlesbrough,20,draw,home,1,right,left,FA Cup,Henderson,right
+Man U,Brentford,61,lead,home,0,right,left,EPL,David Raya,left
+Man U,Sheriff,39,lead,away,1,right,left,Europa League,Kovai,middle
+Portugal,Ghana,64,draw,neutral,1,right,left,WC,Ati-Zigi,left
