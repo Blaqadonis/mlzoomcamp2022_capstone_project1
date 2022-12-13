@@ -34,10 +34,10 @@ async def classify(cristiano_penalty_aim):
 
     result = prediction[0]
 
-    if result > 0.55 and result<1.45:
-        return {"Aim": "left"}
-    elif result > 1.44 and result<2.45:
+    if result == 2:
+        return {"Aim": "right"}
+    elif result == 1:
         return {"Aim": "middle"}
     else :
-        return {"Aim": "right"}
+        return {"Aim": "left"}
     
