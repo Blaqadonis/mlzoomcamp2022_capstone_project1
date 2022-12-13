@@ -78,7 +78,7 @@ from sklearn.metrics import mean_squared_error
 rmse = np.sqrt(mean_squared_error(y_val, y_pred))
 print("RMSE: %f" % (rmse))
 
-pip install bentoml==1.0.7
+#pip install bentoml==1.0.7
 import bentoml
 bentoml.xgboost.save_model("cristiano_penalty_aim_model",model, custom_objects={"DictVectorizer":dv},
 signatures={"predict": {"batchable":True,"batch_dim":0,}})
