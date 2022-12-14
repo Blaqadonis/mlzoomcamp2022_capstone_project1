@@ -15,7 +15,7 @@ class PenaltyAim(BaseModel):
     gk: str
 
 
-model_ref = bentoml.xgboost.get("cristiano_penalty_aim_model:latest")
+model_ref = bentoml.sklearn.get("cristiano_penalty_aim_model:latest")
 dv = model_ref.custom_objects["DictVectorizer"]
 
 
@@ -35,9 +35,9 @@ async def classify(cristiano_penalty_aim):
     result = prediction[0]
 
     if result == 2:
-        return {"Aim": "right"}
-    elif result == 1:
         return {"Aim": "middle"}
-    else :
+    elif result == 1:
         return {"Aim": "left"}
+    elif result == 3:
+        return {"Aim": "right"}
     
