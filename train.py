@@ -19,7 +19,7 @@ data1.columns = [x.lower().replace(':', '') for x in data1.columns]
 data1.columns = [x.lower().replace('*', '') for x in data1.columns]
 data1.columns = [x.lower().replace('.', '') for x in data1.columns]
 
-data1['previous_penalty'] = data1['previous_penalty'].fillna(0).astype(int)  #to turn the column to integer
+data1['previous_penalty'] = data1['previous_penalty'].fillna(1).astype(int)  #to turn the column to integer
 
 data1['target'] = data1['aim'].replace(['left'], 1)
 data1['target'] = data1['target'].replace(['right'], 3)
@@ -75,7 +75,8 @@ accuracy_score(y_val,y_pred)*100
 
 #!pip install bentoml==1.0.7
 import bentoml
-bentoml.xgboost.save_model("cristiano_penalty_aim_model",gnb, custom_objects={"DictVectorizer":dv},
+
+bentoml.sklearn.save_model("cristiano_penalty_aim_model",gnb, custom_objects={"DictVectorizer":dv},
 signatures={"predict": {"batchable":True,"batch_dim":0,}})
 
 
