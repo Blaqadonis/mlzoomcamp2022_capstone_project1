@@ -4,7 +4,7 @@
 # In[4]:
 
 
-get_ipython().system('pip install -U scikit-learn')
+#!pip install -U scikit-learn
 
 import numpy as np
 import pandas as pd
@@ -73,7 +73,7 @@ accuracy_score(y_val,y_pred)*100
 
 
 
-get_ipython().system('pip install bentoml==1.0.7')
+#!pip install bentoml==1.0.7
 import bentoml
 bentoml.xgboost.save_model("cristiano_penalty_aim_model",gnb, custom_objects={"DictVectorizer":dv},
 signatures={"predict": {"batchable":True,"batch_dim":0,}})
