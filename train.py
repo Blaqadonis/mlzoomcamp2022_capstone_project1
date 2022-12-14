@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[8]:
+# In[9]:
 
 
 
@@ -79,7 +79,7 @@ print("Accuracy: %f" % (score))
 
 #!pip install bentoml==1.0.7
 import bentoml
-bentoml.sklearn.save_model("cristiano_penalty_aim_model",model, custom_objects={"DictVectorizer":dv},
+bentoml.xgboost.save_model("cristiano_penalty_aim_model",model, custom_objects={"DictVectorizer":dv},
 signatures={"predict": {"batchable":True,"batch_dim":0,}})
 
 

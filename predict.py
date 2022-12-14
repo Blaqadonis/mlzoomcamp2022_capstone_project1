@@ -15,7 +15,7 @@ class PenaltyAim(BaseModel):
     gk: str
 
 
-model_ref = bentoml.sklearn.get("cristiano_penalty_aim_model:latest")
+model_ref = bentoml.xgboost.get("cristiano_penalty_aim_model:latest")
 dv = model_ref.custom_objects["DictVectorizer"]
 
 
