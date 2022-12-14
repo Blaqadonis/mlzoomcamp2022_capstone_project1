@@ -1,10 +1,13 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[10]:
+# In[8]:
 
 
-#!pip install -U scikit-learn
+
+
+
+get_ipython().system('pip install -U scikit-learn')
 
 import numpy as np
 import pandas as pd
@@ -59,9 +62,9 @@ Dtrain = xgb.DMatrix(X_train, label=y_train_data)
 Dtest = xgb.DMatrix(X_test, label=y_test)
 
 xgb_params = {
-    'eta': 0.5,
+    'eta': 0.9,
     'max_depth': 6,
-    'min_child_weight': 10,
+    'min_child_weight': 5,
 'num_class':3,
     'objective':'multi:softmax',
     'nthread': 8,
@@ -74,10 +77,13 @@ y_pred = model.predict(Dtest)
 score = accuracy_score(y_test, y_pred)
 print("Accuracy: %f" % (score))
 
-#!pip install bentoml==1.0.7
+get_ipython().system('pip install bentoml==1.0.7')
 import bentoml
-bentoml.xgboost.save_model("cristiano_penalty_aim_model",model, custom_objects={"DictVectorizer":dv},
+bentoml.sklearn.save_model("cristiano_penalty_aim_model",model, custom_objects={"DictVectorizer":dv},
 signatures={"predict": {"batchable":True,"batch_dim":0,}})
+
+
+# In
 
 
 # In[ ]:
