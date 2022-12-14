@@ -85,4 +85,3 @@ y_pred_train = gnb.predict(X_train)
 
 # predictions on never-before-seen
 y_pred = gnb.predict(X_test)
-
