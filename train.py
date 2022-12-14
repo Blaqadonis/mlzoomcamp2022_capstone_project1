@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[4]:
+# In[7]:
 
 
-#!pip install -U scikit-learn
+get_ipython().system('pip install -U scikit-learn')
 
 import numpy as np
 import pandas as pd
@@ -19,7 +19,7 @@ data1.columns = [x.lower().replace(':', '') for x in data1.columns]
 data1.columns = [x.lower().replace('*', '') for x in data1.columns]
 data1.columns = [x.lower().replace('.', '') for x in data1.columns]
 
-data1['minute_taken'] = data1['minute_taken'].fillna(1).astype(int)  #to turn the column to integer
+data1['previous_penalty'] = data1['previous_penalty'].fillna(0).astype(int)  #to turn the column to integer
 
 data1['target'] = data1['aim'].replace(['left'], 1)
 data1['target'] = data1['target'].replace(['right'], 3)
@@ -73,7 +73,7 @@ accuracy_score(y_val,y_pred)*100
 
 
 
-#!pip install bentoml==1.0.7
+get_ipython().system('pip install bentoml==1.0.7')
 import bentoml
 bentoml.xgboost.save_model("cristiano_penalty_aim_model",gnb, custom_objects={"DictVectorizer":dv},
 signatures={"predict": {"batchable":True,"batch_dim":0,}})
