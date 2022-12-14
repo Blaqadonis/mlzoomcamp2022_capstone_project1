@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[4]:
 
 
-#!pip install -U scikit-learn
+get_ipython().system('pip install -U scikit-learn')
 
 import numpy as np
 import pandas as pd
@@ -19,11 +19,11 @@ data1.columns = [x.lower().replace(':', '') for x in data1.columns]
 data1.columns = [x.lower().replace('*', '') for x in data1.columns]
 data1.columns = [x.lower().replace('.', '') for x in data1.columns]
 
-data1['minute_taken'] = data1['minute_taken'].fillna(0).astype(int)  #to turn the column to integer
+data1['minute_taken'] = data1['minute_taken'].fillna(1).astype(int)  #to turn the column to integer
 
-data1['target'] = data1['aim'].replace(['left'], 0)
-data1['target'] = data1['target'].replace(['right'], 2)
-data1['target'] = data1['target'].replace(['middle'], 1)
+data1['target'] = data1['aim'].replace(['left'], 1)
+data1['target'] = data1['target'].replace(['right'], 3)
+data1['target'] = data1['target'].replace(['middle'], 2)
 y = data1['target']
 data1 = data1.drop('target',axis=1)
 data1 = data1.drop('aim',axis=1)
@@ -53,30 +53,29 @@ dv = DictVectorizer(sparse=False)
 X_train = dv.fit_transform(dict_train_data)
 X_test = dv.transform(dict_test_data)
 
-import xgboost as xgb
-
-Dtrain = xgb.DMatrix(X_train, label=y_train_data)
-Dtest = xgb.DMatrix(X_test, label=y_test)
-
-xgb_params = {
-    'eta': 0.9,
-    'max_depth': 6,
-    'min_child_weight': 5,
-'num_class':3,
-    'objective':'multi:softmax',
-    'nthread': 8,
-    'seed': 1
-}
+from sklearn.naive_bayes import GaussianNB
+gnb = GaussianNB()
 
 from sklearn.metrics import accuracy_score
-model = xgb.train(xgb_params, Dtrain, num_boost_round=10)
-y_pred = model.predict(Dtest)
-score = accuracy_score(y_test, y_pred)
-print("Accuracy: %f" % (score))
 
-#!pip install bentoml==1.0.7
+gnb.fit(X_train, y_train_data)
+
+y_pred_train = gnb.predict(X_train)
+print('Training-set accuracy score: {0:0.4f}'. format(accuracy_score(y_train_data, y_pred_train)))
+
+y_pred = gnb.predict(X_test)
+print('Test Model accuracy score: {0:0.4f}'. format(accuracy_score(y_test, y_pred)))
+
+print(y_pred[0:10])
+
+
+accuracy_score(y_val,y_pred)*100
+
+
+
+get_ipython().system('pip install bentoml==1.0.7')
 import bentoml
-bentoml.xgboost.save_model("cristiano_penalty_aim_model",model, custom_objects={"DictVectorizer":dv},
+bentoml.xgboost.save_model("cristiano_penalty_aim_model",gnb, custom_objects={"DictVectorizer":dv},
 signatures={"predict": {"batchable":True,"batch_dim":0,}})
 
 
